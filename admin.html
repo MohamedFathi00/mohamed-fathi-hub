@@ -11,3 +11,4 @@ function act(id,x){call({act:x,id:id}).then(function(){return call({act:"list"})
 $("go").onclick=function(){key=$("k").value;$("err").textContent="";call({act:"list"}).then(function(j){if(j._s===200)show(j);else $("err").textContent=j._s===401?"كلمة السر غير صحيحة":"غير متاح الآن ("+j.error+")"})};
 $("k").addEventListener("keydown",function(e){if(e.key==="Enter")$("go").click()})
 </script></body></html>
+<!-- v2 -->
